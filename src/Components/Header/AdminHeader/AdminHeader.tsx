@@ -1,10 +1,12 @@
 import React from 'react';
 import "./AdminHeader.scss"
+
+
 const AdminHeader = () => {
     return (
-        <div>
+       <div>
 
-        </div>
+       </div>
     );
 };
 
