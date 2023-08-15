@@ -1,8 +1,15 @@
 import React from 'react';
-import Home from "./Home";
+import {Route, Routes} from "react-router-dom";
+import ClientHeader from "./Components/Header/ClientHeader/ClientHeader";
 
 const App = () => {
-    return <Home/>
+    return (
+        <>
+            <Routes>
+                <Route path={"/"} element={<ClientHeader/>}/>
+            </Routes>
+        </>
+    )
 };
 
 export default App;
