@@ -1,0 +1,145 @@
+.payments{
+  &-first{
+    h1{
+      color: #181818;
+      font-family: Poppins sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 140%;
+    }
+  }
+  &-second{
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    width: 200px  ;
+    padding-top: 30px;
+    h2{
+      color: #6CC51D;
+      font-family: Poppins sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+  &-third{
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px 0;
+    input{
+      width: 137px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid #F0F2F4 ;
+      gap: 8px
+
+    }
+    &_status{
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      border: 1px solid #F0F2F4;
+      background: #FFF;
+      width: 107px;
+      height:32px;
+      gap: 8px;
+
+      padding-left: 10px;
+      h4{
+        color: #181818;
+        font-family: SF Pro Text sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%;
+        padding: 0 5px;
+      }
+      svg{
+        width: 16px;
+        height: 16px;
+      }
+      select{
+        border: none;
+      }
+    }
+
+  }
+  &-four{
+
+    width: 957px;
+    height: 51.08054733276367px;
+    background: white;
+hr{
+  color: #E4E6E8;
+  background: #E4E6E8;
+}
+
+    &-head{
+      width: 957px;
+      height: 51.08054733276367px;
+      background: white;
+      align-items: center;
+      justify-content: space-evenly;
+      display: flex;
+      h4{
+        font-family: Poppins sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.3404020071029663px;
+        text-align: left;
+
+      }
+
+    }
+    &-body{
+      width: 957px;
+      height: 51.08054733276367px;
+      background: white;
+      align-items: center;
+      justify-content: space-evenly;
+      display: flex;
+      h3{
+        font-family: SF Pro Text sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: left;
+        display: flex;
+      }
+      h2{
+        display: flex;
+        align-items: center;
+        background: #EDFFEA;
+        border-radius:4px ;
+        span{
+          font-family: SF Pro sans-serif;
+          font-size: 12px;
+          font-weight: 510;
+          line-height: 16px;
+          text-align: left;
+        }
+      }
+      h3{
+        display: flex;
+        align-items: center;
+        background: #FFF6E9;
+        border-radius:4px ;
+        span{
+          font-family: SF Pro sans-serif;
+          font-size: 12px;
+          font-weight: 510;
+          line-height: 16px;
+          text-align: left;
+        }
+      }
+      .cards{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+}
+
+

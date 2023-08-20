@@ -1,13 +1,16 @@
 import React from 'react';
-import {Route, Routes} from "react-router-dom";
-import ClientHeader from "./Components/Header/ClientHeader/ClientHeader";
+import Admin from "./admin/Admin";
+import NotificationGlobal from "./Components/Pages/Product";
+
 
 const App = () => {
     return (
         <>
-            <Routes>
-                <Route path={"/"} element={<ClientHeader/>}/>
-            </Routes>
+
+            <Admin/>
+            <NotificationGlobal/>
+
+
         </>
     )
 };

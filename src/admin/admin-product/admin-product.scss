@@ -1,0 +1,110 @@
+.product-list {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  align-items: center;
+  justify-content: center;
+  width: 950px;
+
+  &-both {
+    width: 392px;
+    height: 266px;
+    border-radius: 8px;
+    background: white;
+    margin: 20px 0 ;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.11);
+
+
+    .just {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+
+      h1 {
+        color: #181818;
+        text-align: center;
+        font-family: Poppins sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+      }
+
+      img {
+        width: 65px;
+        height: 65px;
+      }
+    }
+
+
+  }
+
+  &_btn {
+    width: 112px;
+    height: 93px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 50px 160px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    span {
+      width: 28px;
+      height: 23.25px;
+      color: #6CC51D;
+      background: white;
+      font-size: 45px;
+
+
+    }
+  }
+}
+
+.add-photo-page {
+  align-items: flex-end;
+  justify-content: space-evenly;
+  display: flex;
+
+  .photo-three {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .photo-input {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+    img {
+      padding-bottom: 40px;
+      margin-right: 50px;
+    }
+  }
+
+
+}
+
+.new-photo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 80px;
+  flex-direction: column;
+
+  p {
+    font-family: Poppins sans-serif;
+    font-size: 32px;
+    color: #181818;
+    font-weight: 600;
+    text-align: center;
+
+  }
+}
+
