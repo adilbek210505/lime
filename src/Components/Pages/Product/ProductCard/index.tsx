@@ -12,6 +12,8 @@ import {
 } from "../../../../Store/Actions/ClientAction/Basket";
 import {useAppDispatch} from "../../../../Hooks/Dispatch";
 import {useAppSelector} from "../../../../Hooks/Selector";
+import {getFavoriteREC} from "../../../../Store/Actions/ClientAction/Favorite";
+import {MdFavorite} from "react-icons/md";
 
 
 interface Card {
@@ -19,17 +21,28 @@ interface Card {
 }
 
 const ProductCard = ({el}: Card) => {
-    const {basket,basketDetailModal, basketModal} = useAppSelector(s => s.BasketReducer)
+    const {basket, basketDetailModal, basketModal} = useAppSelector(s => s.BasketReducer)
+    const {favorite} = useAppSelector(s => s.FavoriteReducer)
     const dispatch = useAppDispatch()
     const getBAS = () => dispatch(getBasketREC(el))
     const fount = basket.some(item => item.id === el.id)
     const mode = () => dispatch(basketModalREC(true))
     const detail = () => dispatch(basketDetailREC(el))
 
+    const favR = () => dispatch(getFavoriteREC(el))
+
+    const countF = favorite.some((e: any) => e.id === el.id)
+
     return (
         <div className="product--group__block">
             <div className="product--group__block--new">
-                <GrFavorite className="product--group__block--new__icon"/>
+                {
+                    countF ?
+                        <MdFavorite className="product--group__block--new__icon-two" onClick={favR}/>
+                        :
+                        <GrFavorite className="product--group__block--new__icon" style={{color: "red"}} onClick={favR}/>
+
+                }
             </div>
             <div className="product--group__block--image" onClick={detail}>
                 <img onClick={() => dispatch(basketModalDetailREC(basketDetailModal))} src={el.img} alt=""/>

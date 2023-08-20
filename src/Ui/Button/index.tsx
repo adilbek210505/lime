@@ -7,9 +7,10 @@ interface Button {
     classes?: string
     icon?: any
     click?: React.MouseEventHandler<HTMLButtonElement> | undefined
+    styles?: any
 }
-const Button = ({text, classes,icon,click}: Button) => {
-    return <button onClick={click} className={classes}>{icon}{text}</button>
+const Button = ({text, classes,icon,styles,click}: Button) => {
+    return <button style={styles} onClick={click} className={classes}>{icon}{text}</button>
 };
 
 export default Button;

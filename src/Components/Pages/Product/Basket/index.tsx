@@ -24,7 +24,7 @@ const Basket = () => {
     const delBAS = (el: dataB) => dispatch(deleteBasketsREC(el))
 
     const countBas = basket.reduce((acc, el) => {
-        return acc * el.quantity + el.price
+        return acc + el.quantity * el.price
     }, 0)
     const mode = () => dispatch(basketModalREC(basketModal))
 

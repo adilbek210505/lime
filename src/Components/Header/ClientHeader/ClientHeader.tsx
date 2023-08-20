@@ -10,12 +10,15 @@ import {MdOutlineFavoriteBorder} from "react-icons/md";
 import {useAppSelector} from "../../../Hooks/Selector";
 import {useAppDispatch} from "../../../Hooks/Dispatch";
 import {basketModalREC} from "../../../Store/Actions/ClientAction/Basket";
+import {favoriteModalREC} from "../../../Store/Actions/ClientAction/Favorite";
 
 const ClientHeader = () => {
     const {basketModal} = useAppSelector(s => s.BasketReducer)
+    const {favoriteMode} = useAppSelector(s => s.FavoriteReducer)
     const dispatch = useAppDispatch()
-
     const modes = () => dispatch(basketModalREC(basketModal))
+    const favM = () => dispatch(favoriteModalREC(favoriteMode))
+
 
     return (
         <>
@@ -32,7 +35,7 @@ const ClientHeader = () => {
                 <div className="clientHeader--box">
                     <Button icon={<BsGlobe/>} classes={"clientHeader--btn"}/>
                     <Button icon={<HiOutlineMail/>} classes={"clientHeader--btn"}/>
-                    <Button icon={<MdOutlineFavoriteBorder/>} classes={"clientHeader--btn"}/>
+                    <Button click={favM} styles={{background: favoriteMode ? "" : "green"}} icon={<MdOutlineFavoriteBorder/>} classes={"clientHeader--btn"}/>
                     <Button icon={<BiUser/>} classes={"clientHeader--btn"}/>
                 </div>
             </div>
