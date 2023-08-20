@@ -8,12 +8,12 @@ import NotificationGlobal from "./Components/Pages/Product/Notification/Notifica
 const App = () => {
     return (
         <>
-            <Routes>
-                <Route path={"/"} element={<ClientHome/>}/>
-            </Routes>
+            {/*<Routes>*/}
+            {/*    <Route path={"/"} element={<ClientHome/>}/>*/}
+            {/*</Routes>*/}
 
              <Admin/>
-            <NotificationGlobal/>
+            {/*<NotificationGlobal/>*/}
 
         </>
     )
