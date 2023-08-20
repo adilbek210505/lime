@@ -15,6 +15,7 @@ import {getProductREC} from "../../../Store/Actions/ClientAction/Product";
 import ProductCard from "./ProductCard";
 import Basket from "./Basket";
 import DetailProduct from "./DetailProduct";
+import Favorite from "./Favorites";
 
 const Product = () => {
     const {product} = useAppSelector(s => s.ProductReducer)
@@ -210,6 +211,7 @@ const Product = () => {
             <SearchInput/>
             <Basket/>
             <DetailProduct/>
+            <Favorite/>
             <div className="product--group">
                 {
                     product.map(el => <ProductCard el={el}/>)
