@@ -1,0 +1,53 @@
+
+  .product-admin{
+    width: 264px;
+    height: 1096px;
+    background: #6CC51D;
+    padding: 100px 0 0 0;
+    margin-left: 60px;
+
+    .product-icons{
+      display: flex;
+      align-items: center;
+      width: 214px;
+      padding: 8px 16px 8px 16px;
+      gap: 16px;
+      margin-left: 30px;
+
+      h5{
+        font-size: 15px;
+        font-family: Poppins sans-serif;
+        width: 82px;
+        color: #FFFCFC;
+        height: 20px;
+      }
+      svg{
+        width: 20px;
+        height: 20px;
+      }
+
+    }
+    .both{
+      display: flex;
+      align-items: center;
+      width: 214px;
+      padding: 150px 16px 8px 16px;
+      gap: 16px;
+      margin-left: 30px;
+
+      svg{
+        color: #181818;
+        width: 17px;
+        height: 16px;
+      }
+      h4{
+        font-family: Poppins sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: -0.10000000149011612px;
+        color: #181818
+      ;
+      }
+    }
+  }
+

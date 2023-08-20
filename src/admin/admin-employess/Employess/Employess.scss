@@ -1,0 +1,197 @@
+
+.collections {
+  width: 950px;
+
+  .nazi {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    justify-content: center;
+
+    .night {
+      .collection {
+        position: relative;
+        width: 263px;
+        height: 126px;
+        margin: 30px 0;
+        border-radius: 8px;
+        background: var(--white-white, #FFF);
+        box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+        .block1 {
+          .justin {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 20px 0;
+
+          img {
+            width: 32px;
+            height: 32px;
+            margin: 0 10px 0 0;
+
+          }
+
+          h3 {
+            color: var(--gray-800, #1F2633);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Inter sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+          }
+
+          h4 {
+            color: #28B446;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Poppins sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+
+        .block2 {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          left: 75px;
+          top: 45px;
+
+          h1 {
+            color: #000;
+            font-family: Poppins sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          .icons {
+            color: #FFC107;
+            font-size: 11px;
+          }
+        }
+
+        .block3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 0 0 35px 0;
+
+          .buttons {
+            display: flex;
+            margin-left: -10px;
+
+            .btn1 {
+              display: flex;
+              margin: 0 10px;
+              padding: 5px 8px;
+              align-items: center;
+              color: #969BA0;
+              font-family: Poppins sans-serif;
+              font-size: 8px;
+              border-radius: 16px;
+              border: 1px solid #969BA0;
+              background: var(--white-white, #FFF);
+            }
+
+            .btn2 {
+              color: #FCFDFF;
+              text-align: center;
+              font-feature-settings: 'clig' off, 'liga' off;
+              font-family: Inter sans-serif;
+              font-size: 8px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 12px; /* 150% */
+              border-radius: 16px;
+              background: linear-gradient(180deg, #AEDC81 0%, #6CC51D 100%);
+              display: flex;
+              height: 20px;
+              padding: 5px 8px;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+
+          .block4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: -20px;
+
+            .icon1 {
+
+              border-radius: 16px;
+              padding: 5px 7px;
+              color: #FFFFFF;
+              font-size: 10px;
+              background: linear-gradient(141deg, #AEDC81 1.40%, #6CC51D 100%);
+            }
+
+            .icon2 {
+              margin: 0 0 0 10px;
+              border-radius: 16px;
+              padding: 5px 7px;
+              color: #FFFFFF;
+              font-size: 10px;
+              background: linear-gradient(141deg, #AEDC81 1.40%, #6CC51D 100%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .free {
+    display: flex;
+    align-items: center;
+
+
+    button {
+      display: flex;
+      align-items: center;
+      background: white;
+      width: 195px;
+      height: 47px;
+      border-radius: 14px;
+      border: 1px solid #181818;
+      margin-left: 400px;
+      svg{
+
+        margin-left: 10px;
+
+      }
+      h1 {
+        font-family: Cairo sans-serif;
+        font-size: 18px;
+        color: #6CC51D;
+        width: 112px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+      }
+    }
+
+    h1 {
+      color: #181818;
+      font-family: Poppins sans-serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      margin: 0 30px;
+      letter-spacing: 0.32px;
+    }
+
+  }
+
+
+}

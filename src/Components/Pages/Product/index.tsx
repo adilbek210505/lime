@@ -1,3 +1,4 @@
+
 import React, {useEffect} from 'react';
 import SearchInput from "../../../Ui/Input/SearchInput";
 import "./Product.scss"
@@ -219,3 +220,4 @@ const Product = () => {
 };
 
 export default Product;
+
