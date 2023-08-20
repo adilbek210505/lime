@@ -1,15 +1,18 @@
-import React from 'react';
+import React from "react";
 import ClientHeader from "../../Components/Header/ClientHeader/ClientHeader";
-import Product from "../../Components/Pages/Product";
-import Notification from "../../Components/Pages/Product/Notification/Notification";
+
+
 
 const ClientHome = () => {
     return (
-        <>
-            {/*<ClientHeader/>*/}
-            {/*<Product/>*/}
-            <Notification/>
-        </>
+        <div id="clientHome">
+            <div className="container">
+                <div className="clientHome">
+                    <ClientHeader/>
+                    {/*<Product/>*/}
+                </div>
+            </div>
+        </div>
     );
 };
 

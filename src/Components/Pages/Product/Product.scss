@@ -1,0 +1,114 @@
+%df {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product {
+  margin: 0 0 0 300px;
+  height: 100vh;
+  overflow: hidden;
+
+  img {
+    width: 100px;
+  }
+
+  &--group {
+    height: 80%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    @extend %df;
+
+    &__block {
+      cursor: pointer;
+      margin: 20px 0;
+      width: 245px;
+      height: 330px;
+      border-radius: 10px;
+      background: #FFF;
+      @extend %df;
+      flex-direction: column;
+      &--image {
+        border-radius: 80px;
+        width: 100px;
+        height: 100px;
+        background: #FFE6C2;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+      }
+      h2 {
+        color: #6CC51D;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      h1 {
+        color: #181818;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 5px 0;
+      }
+
+      h3 {
+        color: #868889;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+      }
+
+      button {
+        display: flex;
+        width: 100%;
+        height: 58px;
+        padding: 16px 59px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #28B446 0%, #02FF70 100%);
+        flex-shrink: 0;
+        color: #FFF;
+        font-size: 17.376px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      &--new {
+        width: 100%;
+        text-align: end;
+
+        &__icon {
+          cursor: pointer;
+          color: #868889;
+          font-size: 20px;
+          margin: 10px 20px 0 0;
+        }
+
+        p {
+          display: flex;
+          width: 55.635px;
+          height: 26.154px;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          color: #E8AD41;
+          font-size: 14.48px;
+          border-radius: 8.734px 0 0 0;
+          background: #FDEFD5;
+          font-weight: 500;
+          letter-spacing: 0.724px;
+        }
+
+      }
+    }
+  }
+}

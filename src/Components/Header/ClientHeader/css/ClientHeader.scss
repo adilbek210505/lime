@@ -1,0 +1,41 @@
+%df {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.clientHeader {
+  position: fixed;
+  z-index: 99;
+  @extend %df;
+  align-items: center;
+  padding: 20px 0;
+  width: 200px;
+  height: 95%;
+  background: #fff;
+
+  &--btn {
+    width: 68px;
+    height: 68px;
+    background: linear-gradient(133deg, #28B446 0%, #02FF70 100%);
+    border-radius: 10px;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  &--block {
+    @extend %df;
+    height: 330px;
+    &__group {
+      @extend %df;
+      align-items: stretch;
+      height: 230px;
+    }
+  }
+
+  &--box {
+    margin: 40px 0 0 0;
+    @extend %df;
+    height: 320px;
+  }
+}
