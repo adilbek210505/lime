@@ -1,0 +1,176 @@
+.personal-details{
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  width: 710px;
+  height: 641px;
+  border-radius: 10px;
+  border: 10px solid white;
+
+  .detail-right{
+
+    .details-header{
+      align-items: flex-start;
+      justify-content: center;
+      display: flex;
+      margin-top: 10px;
+      button{
+        border: 1px solid #181818;
+        border-radius: 50%;
+        width: 57px;
+        height: 59px;
+      }
+      .header-both{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 40px ;
+        h3{
+          font-family: Poppins sans-serif;
+          font-size: 20px;
+        }
+        h5{
+          font-family: Poppins sans-serif;
+          font-size: 16px;
+          letter-spacing: 0.05em;
+          color: #18181880;
+          margin-top: 5px;
+        }
+      }
+
+    }
+      margin: 10px;
+      .img-global{
+
+        width: 321px;
+        height: 167px;
+        border-radius: 10px;
+        border: 2px solid #868889;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+        .images-details{
+          width: 154px;
+          height: 98px;
+          border-radius: 4px;
+          border: 1px solid #868889;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          .addFile{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+
+  h6{
+    font-family: Poppins sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    color: #18181880;
+    margin-top: 15px;
+  }
+}
+
+        }}
+
+
+
+    .password{
+      .password-inputs{
+        align-items: center;
+        display: flex;
+        margin: 10px 10px 10px 45px;
+        h2{
+          font-family: Poppins sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 0.05em;
+          color: #28B446;
+          width: 113px;
+        }
+        input{
+          background: transparent;
+        }
+      }
+      span{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 210px;
+        h5{
+          font-family: Poppins sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 0.05em;
+          color: #28B446;
+          margin-left: 45px;
+
+        }
+        h4{
+          font-family: Poppins sans-serif;
+          font-size: 12px;
+          color: #18181880;
+        }
+      }
+    }
+  }
+  .details-left{
+    align-items:flex-end ;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    .details-inputs{
+      padding-top: 10px;
+      color: #6CC51D;
+      display: flex;
+      align-items: flex-end;
+      span{
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .input-container{
+      margin-top: 12px;
+      position: relative;
+      display: inline-block;
+      .input-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        width: 13px;
+        height: 15px;
+        color:#6CC51D ;
+      }
+      .custom-input {
+        padding-left: 30px;
+        width: 321.3543701171875px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #868889;
+      }
+      .input-label {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        transition: opacity 0.2s;
+        font-family: Poppins sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #18181880;
+        letter-spacing: 0.005em;
+
+      }
+    }
+  }
+
+}
+
+.custom-input:focus + .input-label {
+  opacity: 0;
+}

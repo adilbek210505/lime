@@ -9,6 +9,7 @@ import Employees from "./admin-employess/Employess/Employess";
 import AdminPayment from "./admin-payment/AdminPayment";
 import Checkout from "../Ui/Checkout/Checkout";
 import AdminDocumention from "./admin-documention/AdminDocumention";
+import PersonalDetails from "./admin-employess/PersonDetails/PersonDetails";
 
 const Admin = () => {
     return (
@@ -32,6 +33,7 @@ const Admin = () => {
                        <Route path={"/payments"} element={ <AdminPayment/>}/>
                        <Route path={"/payment-checkout"} element={<Checkout/>}/>
                        <Route path={"/admin-documentation"} element={<AdminDocumention/>}/>
+                       <Route path={"on-delivery"} element={<PersonalDetails/>}/>
                    </Routes>
                </div>
                 </div>

@@ -1,124 +1,3 @@
-// import React, {useState} from 'react';
-//
-// import "./admin-product.scss"
-// import { AiOutlinePlus } from 'react-icons/ai';
-// import apple from "../img/apple.png"
-// import grocery from "../img/Grocery.png"
-// import galary from "../img/galary1.png"
-//
-// interface Photo {
-//     id: number;
-//     url: string;
-// }
-//
-// const photos: Photo[] = [
-//     { id: 1, url: apple },
-//     { id: 2, url: grocery },
-//     { id: 3, url: apple },
-// ];
-// interface Block {
-//     selectedPhoto: Photo | null;
-//     photoTitle: string;
-// }
-//
-// const AdminProduct: React.FC = () => {
-//     const [isExpanded, setIsExpanded] = useState(false);
-//     const [blocks, setBlocks] = useState<Block[]>([]);
-//
-//
-//
-//     const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
-//     const [photoTitle, setPhotoTitle] = useState<string>('');
-//
-//     const handlePhotoSelect = (photo: Photo) => {
-//         setSelectedPhoto(photo);
-//     };
-//     const handleOpenButtonClick = () => {
-//         setIsExpanded(!isExpanded);
-//     };
-//     const handleTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-//         setPhotoTitle(event.target.value);
-//     };
-//
-//
-//     return (
-//         <div className="product-list">
-//             <div className="product-list-both">
-//                 <div className="just">
-//                     <img src={apple} alt=""/>
-//                     <h1>Vegetables, fruits</h1>
-//                 </div>
-//             </div>
-//             <div className="product-list-both">
-//                 <div className="just">
-//                     <img src={apple} alt=""/>
-//                     <h1>Cosmetics,hygiene</h1>
-//                 </div>
-//             </div>
-//             <div className="product-list-both">
-//                 <div className="just">
-//                     <img src={apple} alt=""/>
-//                     <h1>For kids</h1>
-//                 </div>
-//             </div>
-//             <div className="product-list-both">
-//                 <div className="just">
-//                     <img src={apple} alt=""/>
-//                     <h1>Grocery</h1>
-//                 </div>
-//             </div>
-//             <div className="product-list-both">
-//                 <div className="just">
-//                     <img src={apple} alt=""/>
-//                     <h1>Juices</h1>
-//                 </div>
-//             </div>
-//             {isExpanded && (
-//                 <div className="product-list-both">
-//                     {selectedPhoto ? (
-//                         <div className="new-photo">
-//                             <img src={selectedPhoto.url} alt="Выбранное фото" />
-//                             <p> {photoTitle}</p>
-//                         </div>
-//                     ) : (
-//                         <div className=" add-photo-page">
-//
-//                             <div className="photo-three">
-//                                 {photos.map((photo) => (
-//                                     <img
-//                                         key={photo.id}
-//                                         src={photo.url}
-//                                         alt={`Фото ${photo.id}`}
-//                                         onClick={() => handlePhotoSelect(photo)}
-//                                     />
-//                                 ))}
-//                             </div>
-//                             <div  className="photo-input">
-//                                 <img src={galary} alt=""/>
-//                                 <input
-//                                     type="text"
-//                                     placeholder=" Name of category"
-//                                     value={photoTitle}
-//                                     onChange={handleTitleChange}
-//                                 />
-//                             </div>
-//                         </div>
-//                     )}
-//                 </div>
-//             )}
-//             <div className="product-list_btn">
-//                 <button className="open" onClick={handleOpenButtonClick}>
-//                     <span> <AiOutlinePlus/></span>
-//                 </button>
-//             </div>
-//         </div>
-//     );
-// };
-//
-// export default AdminProduct;
-//
-//
-//
 
 import React, {useState} from 'react';
 
@@ -130,6 +9,9 @@ import galary from "../img/galary1.png"
 import cosmetic from "../img/cosmetic.png"
 import kids from "../img/kids.png"
 import juice from "../img/juice.png"
+import babak from "../img/babak.png"
+import clothes from "../img/close.png"
+import home from  "../img/icon.png"
 import {NavLink} from "react-router-dom";
 
 interface Photo {
@@ -138,9 +20,9 @@ interface Photo {
 }
 
 const photos: Photo[] = [
-    { id: 1, url: apple },
-    { id: 2, url: grocery },
-    { id: 3, url: apple },
+    { id: 1, url: clothes },
+    { id: 2, url: babak },
+    { id: 3, url: home },
 ];
 
 interface Block {

@@ -12,20 +12,22 @@ import Notification from "../Notification";
 
 const NotificationGlobal = () => {
     return (
-        <div>
+        <div style={{display:"flex" ,alignItems:"center" ,justifyContent:"center" ,flexDirection:"column"}}>
             <Notification/>
             <Routes>
                 {/*<Route path={"/"} element={<ClientHeader/>}/>*/}
-                <Route path="/" element={<ProfileNotification/>}/>
+                {/*<Route path="/" element={<ProfileNotification/>}/>*/}
                 <Route path="/new-page" element={<NewPage/>}/>
                 <Route path="/notification-orders" element={<ProfileOrders/>}/>
                 <Route path="/notification-cards" element={<ProfileCard/>}/>
+                <Route path="/change-profile" element={<ProfileNotification/>}/>
+
 
             </Routes>
 
 
-            <TrackOrder/>
-            <Success/>
+            {/*<TrackOrder/>*/}
+            {/*<Success/>*/}
 
         </div>
     );
