@@ -1,0 +1,125 @@
+.noticard {
+  width: 917px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .noticard--btn {
+    padding-top: 20px;
+    width: 677px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    button {
+      width: 97px;
+      height: 42px;
+      border-radius: 10px;
+      background: linear-gradient(to right, #28B446 0%, #02FF70 100%);
+
+      span {
+        color: #FFFFFF;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .noticard--card {
+    padding-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 640px;
+
+    .images{
+      width: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .cards {
+    h3 {
+      font-family: Poppins sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      letter-spacing: 0.03em;
+      color: #868889;
+    }
+
+    input[type="number"] {
+      padding-left: 20px;
+    }
+
+    .card-first {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      input {
+        width: 615px;
+        height: 62.99494171142578px;
+        border-radius: 10px;
+        border: 2px solid #181818;
+
+      }
+    }
+
+    .card-second {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      input {
+        width: 280px;
+        height: 62.99494171142578px;
+        border-radius: 10px;
+        border: 2px solid #181818;
+      }
+
+    }
+
+    .card-three {
+
+      p {
+        width: 630.9038696289062px;
+        height: 63px;
+        font-family: Poppins sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        color: #868889;
+        padding-top: 30px;
+      }
+
+      .save-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 20px;
+      }
+
+      input {
+        width: 24.81618881225586px;
+        height: 24.81618881225586px;
+        border-radius: 5px;
+        border: 2px solid #ACACAC;
+      }
+
+      h5 {
+        font-family: Poppins sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #868889;
+        margin-left: 40px;
+      }
+    }
+  }
+}
