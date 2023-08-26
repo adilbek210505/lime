@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./Notification.scss"
-import {NavLink, Route, Routes} from "react-router-dom";
 import avatar from "../../../../assets/img/avatar.png"
+import {useAppSelector} from "../../../../Hooks/Selector";
 import { AiOutlineMore } from 'react-icons/ai';
 import { PiPencilSimpleLineLight } from 'react-icons/pi';
 import { BsFillCameraFill } from 'react-icons/bs';
@@ -16,7 +16,6 @@ const Notification = () => {
     }
     return (
         <div className="notification ">
-
           <div className="avatar-both">
               <div className="avatar">
                   <img src={avatar} alt=""/>
@@ -52,22 +51,7 @@ const Notification = () => {
                      )}
                  </div>
               <span onClick={handleToggleDiv}> <AiOutlineMore/></span>
-
           </div>
-
-
-
-
-
-            <div className="tabs">
-                <NavLink to="/"><h4> Profile</h4></NavLink>
-                <NavLink to="/notification-orders "><h4> My Orders</h4></NavLink>
-                <NavLink to="/notification-cards "><h4> Credit Cards</h4></NavLink>
-            </div>
-
-
-        </div>
-
     );
 };
 

@@ -11,22 +11,30 @@ import {useAppSelector} from "../../../Hooks/Selector";
 import {useAppDispatch} from "../../../Hooks/Dispatch";
 import {basketModalREC} from "../../../Store/Actions/ClientAction/Basket";
 import {favoriteModalREC} from "../../../Store/Actions/ClientAction/Favorite";
+import {ModalProductREC, productListModalREC} from "../../../Store/Actions/ClientAction/Product";
+import {getNotificationREC} from "../../../Store/Actions/ClientAction/Notification";
 
 const ClientHeader = () => {
+    const {productListModal,productListModalCategory} = useAppSelector(s => s.ProductReducer)
+    const {NotificationModal} = useAppSelector(s => s.NotificationReducer)
     const {basketModal} = useAppSelector(s => s.BasketReducer)
     const {favoriteMode} = useAppSelector(s => s.FavoriteReducer)
     const dispatch = useAppDispatch()
     const modes = () => dispatch(basketModalREC(basketModal))
     const favM = () => dispatch(favoriteModalREC(favoriteMode))
-
+    const modProductList = () => {
+        dispatch(productListModalREC(productListModal))
+        dispatch(ModalProductREC(true))
+    }
+    const NotificationMode = () => dispatch(getNotificationREC(NotificationModal))
 
     return (
         <>
             <div className="clientHeader">
                 <div className="clientHeader--block">
-                    <div><img src={logo} alt="img"/></div>
+                    <div onClick={() => dispatch(ModalProductREC(false))}><img src={logo} alt="img"/></div>
                     <div className="clientHeader--block__group">
-                        <Button icon={<BsBoxSeam/>} classes={"clientHeader--btn"}/>
+                        <Button click={modProductList} icon={<BsBoxSeam/>} classes={"clientHeader--btn"}/>
                         <Button icon={<BiBell/>} classes={"clientHeader--btn"}/>
                         <Button click={modes} icon={<SlBasket/>} classes={"clientHeader--btn"}/>
                     </div>
@@ -36,7 +44,7 @@ const ClientHeader = () => {
                     <Button icon={<BsGlobe/>} classes={"clientHeader--btn"}/>
                     <Button icon={<HiOutlineMail/>} classes={"clientHeader--btn"}/>
                     <Button click={favM} styles={{background: favoriteMode ? "" : "green"}} icon={<MdOutlineFavoriteBorder/>} classes={"clientHeader--btn"}/>
-                    <Button icon={<BiUser/>} classes={"clientHeader--btn"}/>
+                    <Button click={NotificationMode} icon={<BiUser/>} classes={"clientHeader--btn"}/>
                 </div>
             </div>
         </>

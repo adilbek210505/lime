@@ -47,7 +47,6 @@ const ProfileCard = () => {
                         this website, and for other purposes <br/>described in our privacy policy.</p>
                 </div>
             </div>
-
         </div>
     );
 };

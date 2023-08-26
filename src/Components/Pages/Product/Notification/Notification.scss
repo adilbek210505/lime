@@ -1,10 +1,17 @@
 .notification {
+  position: absolute;
+  top: 0;
   width: 917px;
+  padding: 30px 0;
   align-items: center;
+  justify-content: center;
+  height: 90%;
+  background: #fff;
+.avatar{
+  align-items: flex-end;
   justify-content: center;
   flex-direction: column;
   display: flex;
-
   a{
     color:#181818;
   }

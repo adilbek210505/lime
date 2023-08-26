@@ -14,28 +14,26 @@ import PersonalDetails from "./admin-employess/PersonDetails/PersonDetails";
 const Admin = () => {
     return (
         <div className="admin">
-
             <div className="admin-both">
-                <div className="admin-pages"> <AdminHeader/></div>
-
-                <div className="product-global" style={{display:"flex",flexDirection:"column"}}>
+                <div className="admin-pages"><AdminHeader/></div>
+                <div className="product-global" style={{display: "flex", flexDirection: "column"}}>
                     <div className="search">
-                        <span>   <input type="text"  placeholder="Search here"/> </span>
+                        <span>
+                              <input type="text" placeholder="Search here"/>
+                        </span>
                     </div>
-
-               <div className="admin-rout">
-                   <Routes>
-                       <Route path={"/product"} element={<AdminProduct/>}/>
-                       <Route path={"/product-list"} element={<ProductLIst/>}/>
-                       <Route path={"/add-product"} element={<AddProduct/>}/>
-                       <Route path={"/add-list"} element={<ProductLIst/>}/>
-                       <Route path={"/employees"} element={<Employees/>}/>
-                       <Route path={"/payments"} element={ <AdminPayment/>}/>
-                       <Route path={"/payment-checkout"} element={<Checkout/>}/>
-                       <Route path={"/admin-documentation"} element={<AdminDocumention/>}/>
-                       <Route path={"on-delivery"} element={<PersonalDetails/>}/>
-                   </Routes>
-               </div>
+                    <div className="admin-rout">
+                        <Routes>
+                            <Route path={"/admin/product"} element={<AdminProduct/>}/>
+                            <Route path={"/product-list"} element={<ProductLIst/>}/>
+                            <Route path={"/add-product"} element={<AddProduct/>}/>
+                            <Route path={"/add-list"} element={<ProductLIst/>}/>
+                            <Route path={"/employees"} element={<Employees/>}/>
+                            <Route path={"/payments"} element={<AdminPayment/>}/>
+                            <Route path={"/payment-checkout"} element={<Checkout/>}/>
+                            <Route path={"/admin-documentation"} element={<AdminDocumention/>}/>
+                        </Routes>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,3 @@
-
 import React, {useEffect} from 'react';
 import SearchInput from "../../../Ui/Input/SearchInput";
 import "./Product.scss"
@@ -16,6 +15,10 @@ import ProductCard from "./ProductCard";
 import Basket from "./Basket";
 import DetailProduct from "./DetailProduct";
 import Favorite from "./Favorites";
+import ProductList from "./ProductList";
+import ProductListModal from "./ProductList/ProductListModal";
+import Notification from "./Notification/Notification";
+import ProfileOrders from "./Notification/ ProfileOrders/ProfileOrders";
 
 const Product = () => {
     const {product} = useAppSelector(s => s.ProductReducer)
@@ -129,7 +132,8 @@ const Product = () => {
             img: cola,
             quantity: 1,
             description: "Description Coca Cola",
-            category: "beverages",
+            category: "juices",
+            categoryJuices: "still"
         },
         {
             id: 12,
@@ -139,7 +143,8 @@ const Product = () => {
             img: pepsi,
             quantity: 1,
             description: "Description Pepsi",
-            category: "beverages",
+            category: "juices",
+            categoryJuices: "still"
         },
         {
             id: 13,
@@ -149,7 +154,7 @@ const Product = () => {
             img: apply,
             quantity: 1,
             description: "Description Apple Juice",
-            category: "juices",
+            category: "fruits",
         },
         {
             id: 14,
@@ -159,7 +164,7 @@ const Product = () => {
             img: orange,
             quantity: 1,
             description: "Description Orange Juice",
-            category: "juices",
+            category: "fruits",
         },
         {
             id: 15,
@@ -169,7 +174,8 @@ const Product = () => {
             img: asu,
             quantity: 1,
             description: "Description Water",
-            category: "beverages",
+            category: "juices",
+            categoryJuices: "water"
         },
         {
             id: 16,
@@ -179,7 +185,7 @@ const Product = () => {
             img: pr,
             quantity: 1,
             description: "Description Pineapple Juice",
-            category: "juices",
+            category: "fruits",
         },
         {
             id: 17,
@@ -199,7 +205,7 @@ const Product = () => {
             img: milk,
             quantity: 1,
             description: "Description Milk",
-            category: "dairyProducts",
+            category: "beverages",
         },
     ]
     useEffect(() => {
@@ -212,6 +218,9 @@ const Product = () => {
             <Basket/>
             <DetailProduct/>
             <Favorite/>
+            <ProductListModal/>
+            <ProductList/>
+            <Notification/>
             <div className="product--group">
                 {
                     product.map(el => <ProductCard el={el}/>)

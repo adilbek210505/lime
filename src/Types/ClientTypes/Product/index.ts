@@ -1,6 +1,10 @@
 
 export interface ProductState {
-    product: dataB[]
+    product: dataB[],
+    productListModal: boolean,
+    productList: Partial<any>,
+    productListCategory: string,
+    productListModalCategory: boolean
 }
 
 export type dataB = {
@@ -13,4 +17,5 @@ export type dataB = {
     description: string
     liter: string | number
     category: string
+    categoryJuices: any
 }
