@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
-
-
+import "./ProfileNotification.scss"
 const ProfileNotification: React.FC = () => {
+
     const navigate = useNavigate();
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")

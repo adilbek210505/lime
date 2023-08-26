@@ -9,6 +9,7 @@ import Employees from "./admin-employess/Employess/Employess";
 import AdminPayment from "./admin-payment/AdminPayment";
 import Checkout from "../Ui/Checkout/Checkout";
 import AdminDocumention from "./admin-documention/AdminDocumention";
+import PersonalDetails from "./admin-employess/PersonDetails/PersonDetails";
 
 const Admin = () => {
     return (

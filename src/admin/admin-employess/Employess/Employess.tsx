@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Employess.scss"
 
-import { Link } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import user from "../../img/user.png";
 import { BsFillStarFill } from "react-icons/bs";
 import { FaStarHalfAlt } from "react-icons/fa";
@@ -61,8 +61,8 @@ const Employees = () => {
                            </div>
                            <div className="block3">
                                <div className="buttons">
-                                   <button className="btn1">Free</button>
-                                   <button className="btn2">On Delivery</button>
+                                  <button className="btn1">Free</button>
+                               <NavLink to={"/on-delivery"}>   <button className="btn2">On Delivery</button> </NavLink>
                                </div>
                                <div className="block4">
                                    < FiPhoneCall className="icon1"/>
@@ -97,7 +97,7 @@ const Employees = () => {
                            <div className="block3">
                                <div className="buttons">
                                    <button className="btn1">Free</button>
-                                   <button className="btn2">On Delivery</button>
+                                   <NavLink to={"/on-delivery"}>   <button className="btn2">On Delivery</button> </NavLink>
                                </div>
                                <div className="block4">
                                    < FiPhoneCall className="icon1"/>
@@ -131,7 +131,7 @@ const Employees = () => {
                        <div className="block3">
                            <div className="buttons">
                                <button className="btn1">Free</button>
-                               <button className="btn2">On Delivery</button>
+                               <NavLink to={"/on-delivery"}>   <button className="btn2">On Delivery</button> </NavLink>
                            </div>
                            <div className="block4">
                                < FiPhoneCall className="icon1"/>
